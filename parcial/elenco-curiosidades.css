@@ -1,0 +1,87 @@
+aside {
+    background-color: #EBF5FB;
+    border-left: 5px solid #0066CC;
+    padding: 15px;
+    margin: 80px auto;
+    width: 600px;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+aside h3 {
+    color: #212F3D;
+    border-bottom: 1px solid #0066CC;
+    padding-bottom: 10px;
+}
+
+blockquote {
+    color: #212F3D;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.img-elenco a {
+    display: inline-block;
+    line-height: 0;
+    margin: 50px;
+}
+
+.img-elenco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.fila-superior,
+.fila-inferior {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.personaje-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.personaje-container a {
+    display: inline-block;
+    line-height: 0;
+    margin-bottom: 10px;
+}
+
+.personajes-elenco {
+    width: 230px;
+    height: 310px;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    display: block;
+    object-fit: cover;
+}
+
+.nombre-personaje {
+    font-size: 25px;
+    font-weight: 600;
+    color: #212F3D;
+    margin: 0;
+    padding: 0;
+    max-width: 200px;
+    line-height: 1.2;
+}
+
+.creadores-productores {
+    text-align: center;
+    list-style-position: inside;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#david_shore {
+    margin-top: 10px;
+}
