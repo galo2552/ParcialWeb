@@ -68,8 +68,22 @@ p {
 
 a {
     text-decoration: none;
+    color: inherit;
+}
+
+.link-text {
     color: #0066CC;
-    padding: 0;
+    padding: 3px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.link-text:hover {
+    background-color: #5DADE2;
+}
+
+.link-image:hover {
+    
 }
 
 footer {
@@ -121,25 +135,34 @@ li {
 }
 
 .menu-link {
-    text-decoration: none;
     color: #ECF0F1;
     font-size: 20px;
     padding: 10px 15px;
     border-radius: 16px;
     background-color: #2C3E50;
+    transition: background-color 0.3s ease;
+}
+
+.menu-link:hover {
+    background-color: #5DADE2;
+}
+
+.menu-link:hover::after {
+    width: 100%;
 }
 
 .menu-link-titulo {
     color: #ECF0F1;
+    transition: all 0.3s ease;
 }
 
-.menu-link-titulo:hover {
-    text-decoration: none;
+.menu-link-titulo:hover h1 {
+    color: #00A8FF;
+    text-shadow: 0 0 20px rgba(0, 168, 255, 0.5);
 }
 
 .menu-link:hover {
     text-decoration: none;
-    
 }
 
 .house {
@@ -153,6 +176,11 @@ li {
     padding: 6px 10px;
     border-radius: 6px;
     background-color: #2C3E50;
+    transition: background-color 0.3s ease;
+}
+
+.menu-footer:hover {
+    background-color: #5DADE2;
 }
 
 .aclaros {
@@ -160,8 +188,4 @@ li {
     font-style: italic;
     margin-top: 40px;
     margin-bottom: 0;
-}
-
-a:hover {
-    text-decoration: underline;
 }
