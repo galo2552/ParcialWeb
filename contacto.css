@@ -1,0 +1,60 @@
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 80px auto;
+    width: 320px;
+}
+
+label {
+    font-family: 'Exo', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+    margin-bottom: 40px;
+}
+
+.inputs, textarea {
+    border-radius: 10px;
+    border: 3px solid #2C3E50;
+    width: 300px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Exo', sans-serif;
+}
+
+.inputs:hover, textarea:hover {
+    box-shadow: #3b3634 5px 5px 5px 3px;
+}
+
+label:first-of-type {
+    margin-top: 0;
+}
+
+.input-label-textarea {
+    transition: transform 0.3s ease;
+    margin-top: 12px;
+}
+
+.input-label-textarea:hover {
+    transform: translateY(-8px);
+}
+
+#enviar {
+    width: 320px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 3px solid #2C3E50;
+    font-family: 'Exo', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+#enviar:hover {
+    background-color: #5DADE2;
+    color: white;
+}
