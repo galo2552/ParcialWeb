@@ -28,3 +28,7 @@ body:has(iframe:hover)::before {
     font-size: 40px;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+}
