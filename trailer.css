@@ -1,11 +1,16 @@
 iframe {
-    display: block;
-    margin: 0 auto;
     width: 900px;
     height: 600px;
     position: relative;
     z-index: 10;
     transition: transform 0.5s ease-in-out;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 iframe:hover {
@@ -24,7 +29,7 @@ body:has(iframe:hover)::before {
 }
 
 .titulo-trailer {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     font-size: 40px;
 }
 
