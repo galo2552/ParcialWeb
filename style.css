@@ -168,10 +168,6 @@ li {
     text-shadow: 0 0 20px rgba(0, 168, 255, 0.5);
 }
 
-.menu-link:hover {
-    text-decoration: none;
-}
-
 .house {
     width: 600px;
 }
