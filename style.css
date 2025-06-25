@@ -158,12 +158,12 @@ li {
     width: 100%;
 }
 
-.menu-link-titulo {
+#menu-link-titulo {
     color: #ECF0F1;
     transition: 0.8s ease;
 }
 
-.menu-link-titulo:hover h1 {
+#menu-link-titulo:hover h1 {
     color: #00A8FF;
     text-shadow: 0 0 20px rgba(0, 168, 255, 0.5);
 }
