@@ -168,11 +168,11 @@ li {
     text-shadow: 0 0 20px rgba(0, 168, 255, 0.5);
 }
 
-.house {
+#house {
     width: 600px;
 }
 
-.house:hover {
+#house:hover {
     box-shadow: #212F3D 0px 8px 25px;
 }
 
