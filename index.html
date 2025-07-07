@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <link rel="shortcut icon" href="img/house-logo.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Exo&family=Roboto&display=swap" rel="stylesheet">
     <title>Dr. House 💊</title>
@@ -11,23 +12,38 @@
 <body>
     <header id="inicio">
         <nav>
+            <input class="menu-input" type="checkbox" id="check">
+            <label for="check" class="menu-label">
+                <img class="menu-icon" src="./img/menu.png" alt="menu-ico">
+            </label>
+            <ul class="menu-opciones">
+                <li class="menu-opciones-li">
+                    <a href="#estudio" class="opciones">Estudio de grabacion</a>
+                    <a href="elenco-curiosidades.html" class="opciones">Elenco y curiosidades</a>
+                    <a href="trailer.html" class="opciones">Trailer</a>
+                    <a class="opciones" rel="noopener" href="https://es.wikipedia.org/wiki/Dr._House" target="_blank">Información de Dr House</a>
+                    <a class="opciones" rel="noopener" title="Netflix" href="https://www.netflix.com/ar/title/70136117" target="_blank">Dr. House En Netflix</a>
+                    <a class="opciones" rel="noopener" href="https://house.fandom.com/es/wiki/P%C3%A1gina_principal" target="_blank">Fandom</a>
+                    <a class="opciones" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
             <ul id="menu">
                 <li><a id="menu-link-titulo" href="index.html"><h1>Dr House M.D</h1></a></li>
-                <li><a class="menu-link" href="elenco-curiosidades.html">Elenco y curiosidades</a></li>
                 <li><a class="menu-link" href="#estudio">Estudio de grabación</a></li>
+                <li><a class="menu-link" href="elenco-curiosidades.html">Elenco y curiosidades</a></li>
                 <li><a class="menu-link" href="trailer.html">Trailer</a></li>
             </ul>
         </nav>
-            <h2>Introducción</h2>
-            <p>
-                Esta es una página dedicada a <span>Dr House</span>, una serie de televisión estadounidense de drama médico, centrada en el excéntrico y brillante doctor <span>Gregory House</span>. Con un enfoque único en los diagnósticos médicos poco comunes, la serie combina misterio, medicina y un humor ácido.
-            </p>
-            <p id="genero">
-                <span>Género</span>: Drama médico, Misterio.
-            </p>
-            <figure>
-                <img id="house" title="Dr House" src="./img/drhouse.jpg">
-            </figure>
+        <h2 id="introduccion">Introducción</h2>
+        <p>
+            Esta es una página dedicada a <span>Dr House</span>, una serie de televisión estadounidense de drama médico, centrada en el excéntrico y brillante doctor <span>Gregory House</span>. Con un enfoque único en los diagnósticos médicos poco comunes, la serie combina misterio, medicina y un humor ácido.
+        </p>
+        <p class="genero">
+            <span>Género</span>: Drama médico, Misterio.
+        </p>
+        <figure>
+            <img class="house" title="Dr House" src="./img/drhouse.jpg">
+        </figure>
     </header>
     
     <main>
@@ -37,18 +53,16 @@
                 <p>
                     La serie sigue a <span>Gregory House</span>, un médico especialista en diagnóstico que trabaja en el ficticio Hospital Princeton-Plainsboro en <a class="link-text" rel="noopener" href="https://tinyurl.com/4ut8c8wm" target="_blank">Nueva Jersey</a>. A pesar de su comportamiento antisocial y su adicción a los analgésicos, House es reconocido por resolver casos médicos complejos que otros no pueden diagnosticar.
                 </p>
-                
                 <h2 id="estudio">Estudio De Grabación</h2>
                 <p>
                     Aunque la historia se sitúa en <a class="link-text" rel="noopener" href="https://tinyurl.com/4ut8c8wm" target="_blank">Nueva Jersey</a>, la serie fue filmada principalmente en estudios de <a class="link-text" href="https://tinyurl.com/3n293ahy" target="_blank" rel="noopener">Los Ángeles, California</a>. Algunas tomas exteriores fueron realizadas en el campus de la <a class="link-text" href="https://tinyurl.com/2u6as3r5" target="_blank" rel="noopener">Universidad de Princeton</a>.
                 </p>
                 <p class="aclaros">(Puede acceder a la ubicación clickeando la imagen)</p>
-                
-                <a rel="noopener" href="https://en.wikipedia.org/wiki/Frist_Campus_Center#/map/0" target="_blank">
-                        <img title="Estudio" src="./img/hospital.jpeg">
-                </a>
-            </article>
 
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d48652.82354952362!2d-74.65516891150001!3d40.34674983669023!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDIwJzQ4LjMiTiA3NMKwMzknMTguNiJX!5e0!3m2!1sen!2sar!4v1751456472808!5m2!1sen!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+            </article>
+            
             <article>
                 <h2>Impacto Cultural</h2>
                 <p>
@@ -62,7 +76,7 @@
     </main>
 
     <footer>
-        <ul>
+        <ul class="footer-ul">
             <li><a class="menu-footer" href="#inicio">Inicio</a></li>
             <li><a class="menu-footer" rel="noopener" href="https://es.wikipedia.org/wiki/Dr._House" target="_blank">Información de Dr House</a></li>
             <li><a class="menu-footer" rel="noopener" title="Netflix" href="https://www.netflix.com/ar/title/70136117" target="_blank">Dr. House En Netflix</a></li>
