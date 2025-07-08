@@ -26,7 +26,7 @@
     }
 }
 
-@media screen and (max-width: 1269px) {
+@media screen and (max-width: 1024px) {
     nav {
         position: fixed;
         top: 0;
@@ -42,7 +42,7 @@
         left: 0;
         right: 0;
         margin: 0 auto;
-        width: 36vh;
+        width: 40vh;
     }
 
     #menu li:not(:first-child) {
@@ -63,7 +63,6 @@
         transition: transform 0.3s ease;
     }
 
-    /* Transformación del ícono hamburguesa a X */
     #check:checked ~ .menu-label .menu-icon {
         transform: rotate(180deg);
     }
@@ -133,8 +132,38 @@
     }
 }
 
+@media screen and (max-width: 1023px) {
+    * {
+        transition: none;
+        animation: none;
+        transform: none;
+    }
+
+    .house:hover {
+        transform: none;
+        transition: none;
+        box-shadow: none;
+    }
+
+    .link-text:hover{
+        transform: none;
+        transition: none;
+        text-shadow: none;
+    }
+
+    #menu-link-titulo:hover h1 {
+        transform: none;
+        transition: none;
+        text-shadow: none;
+    }
+
+    .menu-footer:hover {
+        background-color: inherit;
+    }
+}
+
 @media screen and (max-width: 863px) {
-    .footer-ul li:not(:first-child) {
+    .footer-ul li:not(:last-child) {
         display: none;
     }
 
@@ -143,16 +172,10 @@
     }
 }
 
-@media screen and (max-width: 643px) {
-    footer {
-        width: 100%;
-    }
-}
-
 /* Mobile L */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 635px) {
     #menu li:first-child {
-        width: 36vh;
+        width: 40vh;
     }
 
     #menu li:first-child h1 {
@@ -208,7 +231,7 @@
 /* Mobile M */
 @media screen and (max-width: 375px) {
     #menu li:first-child {
-        width: 34vh;
+        width: 37vh;
         margin-left: 50px;
     }
 
@@ -242,16 +265,12 @@
         font-size: 2.1rem;
         padding: 0 8px;
     }
-
-    .footer-ul a:first-child {
-        font-size: 1.6rem;
-    }
 }
 
 /* Mobile S */
 @media screen and (max-width: 320px) {
     #menu li:first-child {
-        width: 32vh;
+        width: 34vh;
         margin: 0 30px;
     }
 
@@ -295,9 +314,5 @@
 
     .aclaros {
         font-size: 15px;
-    }
-
-    .footer-ul a:first-child {
-        font-size: 1.4rem;
     }
 }
