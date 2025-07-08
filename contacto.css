@@ -2,13 +2,13 @@ form {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 80px auto;
+    margin: 30px auto;
     width: 320px;
 }
 
 label {
     font-family: 'Exo', sans-serif;
-    font-size: 17px;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
@@ -23,16 +23,12 @@ textarea {
     border: 3px solid #2C3E50;
     width: 300px;
     padding: 10px;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-family: 'Exo', sans-serif;
 }
 
 .inputs:hover, textarea:hover {
     box-shadow: #3b3634 5px 5px 5px 3px;
-}
-
-label:first-of-type {
-    margin-top: 0;
 }
 
 .input-label-textarea {
@@ -47,7 +43,7 @@ label:first-of-type {
 #enviar {
     width: 320px;
     height: 50px;
-    font-size: 16px;
+    font-size: 1rem;
     border-radius: 10px;
     border: 3px solid #2C3E50;
     font-family: 'Exo', sans-serif;
