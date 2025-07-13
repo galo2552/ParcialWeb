@@ -1,0 +1,43 @@
+@media screen and (max-width: 1440px) {
+    img {
+        width: 350px;
+    }
+    
+}
+
+@media screen and (max-width: 1023px) {
+    img:hover {
+        transform: none;
+        transition: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    img {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    img {
+        width: 300px;
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+    img {
+        width: 300px;
+    }
+    
+}

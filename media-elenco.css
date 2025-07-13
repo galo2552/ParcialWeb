@@ -1,0 +1,357 @@
+#check {
+    display: none;
+}
+
+@media screen and (max-width: 1387px) {
+    #menu li:first-child {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    #menu li:first-child {
+        position: absolute;
+        left: 0;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 1270px) {
+    .menu-label {
+        display: none;
+    }
+
+    .menu-opciones {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    #introduccion {
+        margin-top: 160px;
+    }
+
+    #menu li:first-child {
+        left: 100px;
+        right: 100px;
+        margin: 0 auto;
+        width: 50vh;
+    }
+
+    #menu li:not(:first-child) {
+        display: none;
+    }
+
+    .footer-ul li:not(:last-child) {
+        display: none;
+    }
+
+    #elenco {
+        margin-top: 160px;
+    }
+
+    .menu-label {
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-icon {
+        width: 55px;
+        transition: transform 0.3s ease;
+    }   
+
+    #check:checked ~ .menu-label .menu-icon {
+        transform: rotate(180deg);
+    }
+
+    .menu-label::before,
+    .menu-label::after {
+        content: '';
+        position: absolute;
+        width: 55px;
+        height: 3px;
+        background-color: #ECF0F1;
+        transition: all 0.3s ease;
+        opacity: 0;
+}
+
+    .menu-label::before {
+        transform: rotate(45deg);
+    }
+
+    .menu-label::after {
+        transform: rotate(-45deg);
+    }
+
+    #check:checked ~ .menu-label::before,
+    #check:checked ~ .menu-label::after {
+        opacity: 1;
+    }
+
+    #check:checked ~ .menu-label .menu-icon {
+        opacity: 0;
+    }
+
+    .menu-opciones {
+        position: fixed;
+        width: 100%;
+        height: 0vh;
+        top: 90px;
+        left: 0;
+        background-color: #212F3D;
+        opacity: 95%;
+        text-align: center;
+        transition: all 0.5s;
+        padding: 0;
+    }
+
+    .menu-opciones .menu-opciones-li {
+        display: none;
+        list-style: none;
+        margin: 50px 0;
+        transition: all 0.5s;
+    }  
+
+    #check:checked ~ .menu-opciones {
+        height: 100vh;
+    }
+
+    #check:checked ~ .menu-opciones .menu-opciones-li {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .opciones {
+        color: #ECF0F1;
+        font-size: 2rem;
+        border-top: 2px solid #ECF0F1;
+        border-bottom: 2px solid #ECF0F1;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    * {
+        transition: none;
+        animation: none;
+        transform: none;
+    }
+
+    img:hover {
+        transform: none;
+        transition: none;
+        box-shadow: none;
+    }
+
+    .link-text:hover{
+        transform: none;
+        transition: none;
+        text-shadow: none;
+        background-color: initial;
+    }
+
+    #menu-link-titulo:hover h1 {
+        transform: none;
+        transition: none;
+        text-shadow: none;
+    }
+
+    .menu-footer:hover {
+        background-color: inherit;
+    }
+}
+
+/* Tablet */
+
+@media screen and (max-width: 768px) {
+    nav {
+        height: 120px;
+        padding: 0 20px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin: 20px 0;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 18px;
+        max-width: 100%;
+    }
+
+    li {
+        font-size: 1.2rem;
+        max-width: 100%;
+    }
+
+    img {
+        width: 350px;
+        max-width: 100%;
+    }
+
+    .img-elenco {
+        max-width: 100%;
+    }
+    
+    .fila-superior,
+    .fila-inferior {
+        flex-wrap: wrap;
+    }
+
+    .personajes-elenco {
+        width: 275px;
+        height: 320px;
+    }
+    
+    .nombre-personaje {
+        font-size: 22px;
+        max-width: 60%;
+    }
+    
+    .personajes {
+        font-size: 0.2rem;
+    }
+
+    aside {
+        width: 85%;
+        margin: 40px auto;
+        padding: 20px;
+    }
+    
+    blockquote {
+        font-size: 1.2rem;
+    }
+    
+    #menu li:first-child {
+        margin: 0 auto;
+        width: 35vh;
+        left: 63px;
+    }
+
+    .housebaston {
+        display: none;
+    }
+
+    #david-img {
+        width: 420px;
+    }
+}
+
+/* MOBILE L */
+@media screen and (max-width: 425px) {
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        height: 100px;
+    }
+
+    .menu-icon {
+        width: 50px;
+    }
+
+    #elenco {
+        margin-top: 120px;
+    }
+    
+    article {
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
+    
+    h1 {
+        font-size: 42px;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+        margin: 15px 0;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+    
+    li {
+        font-size: 1.1rem;
+    }
+    
+    img {
+        width: 280px;
+        max-width: 90%;
+    }
+    
+    .house {
+        width: 300px;
+        max-width: 90%;
+    }
+    
+    iframe {
+        width: 95%;
+        height: 250px;
+    }
+    
+    .img-elenco {
+        padding: 0 15px;
+    }
+    
+    .fila-superior,
+    .fila-inferior {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .personajes-elenco {
+        width: 180px;
+        height: 240px;
+    }
+    
+    .nombre-personaje {
+        font-size: 18px;
+        max-width: 160px;
+    }
+    
+    aside {
+        width: 90%;
+        margin: 30px auto;
+        padding: 15px;
+    }
+    
+    blockquote {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #menu li:first-child h1 {
+        font-size: 30px;
+        padding: 0;
+        width: 25vh;
+    }
+}
