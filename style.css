@@ -5,6 +5,12 @@ body {
     font-family: 'Roboto', sans-serif;
 }   
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
 span {
     font-weight: 600;
 }
@@ -28,11 +34,27 @@ img:hover {
     transition: transform 0.3s ease-in-out;
 }
 
-iframe {
+.maps {
     width: 580px;
     height: 430px;
     border-radius: 10px;
     border: gray 2px solid;
+}
+
+.boton-mapa {
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    font-size: 20px;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-mapa:hover {
+    background-color: #5DADE2;
 }
 
 article {
