@@ -203,7 +203,7 @@
         font-size: 1.8rem;
     }
 
-    iframe {
+    .maps {
         width: 95%;
         height: 350px;
     }
@@ -251,7 +251,7 @@
         font-size: 1.7rem;
     }
 
-    iframe {
+    .maps {
         width: 98%;
         height: 320px;
     }
@@ -297,7 +297,7 @@
         padding: 8px 5px;
     }
 
-    iframe {
+    .maps {
         width: 98%;
         height: 300px;
     }
