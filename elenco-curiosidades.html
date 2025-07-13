@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="elenco-curiosidades.css">
+    <link rel="stylesheet" href="media-elenco.css">
     <link rel="shortcut icon" href="img/house-logo.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Exo&family=Roboto&display=swap" rel="stylesheet">
     <title>Elenco y Curiosidades 💊</title>
@@ -12,6 +13,19 @@
 <body>
     <header id="inicio">
             <nav>
+                <input class="menu-input" type="checkbox" id="check">
+            <label for="check" class="menu-label">
+                <img class="menu-icon" src="./img/menu.png" alt="menu-ico">
+            </label>
+            <ul class="menu-opciones">
+                <li class="menu-opciones-li">
+                    <a href="elenco-curiosidades.html" class="opciones">Elenco y curiosidades</a>
+                    <a href="trailer.html" class="opciones">Trailer</a>
+                    <a class="opciones" rel="noopener" href="https://es.wikipedia.org/wiki/Dr._House" target="_blank">Información de Dr House</a>
+                    <a class="opciones" rel="noopener" title="Netflix" href="https://www.netflix.com/ar/title/70136117" target="_blank">Dr. House En Netflix</a>
+                    <a class="opciones" rel="noopener" href="https://house.fandom.com/es/wiki/P%C3%A1gina_principal" target="_blank">Fandom</a>
+                </li>
+            </ul>
                 <ul id="menu">
                     <li><a id="menu-link-titulo" href="index.html"><h1>Dr House M.D</h1></a></li>
                     <li><a class="menu-link" href="#temporadas">Temporadas y episodios</a></li>
@@ -23,7 +37,7 @@
             <article>
                 <h2 id="elenco">Elenco y Personajes</h2>
                     <h3>Personajes Principales:</h3>
-                            <ul>
+                            <ul class="personajes">
                                 <li>
                                     <a class="link-text" target="_blank" href="https://es.wikipedia.org/wiki/Hugh_Laurie" rel="noopener">Hugh Laurie</a> como Dr. <span>Gregory House</span> - Genio médico, sarcástico, adicto al Vicodin.
                                 </li>
@@ -110,9 +124,9 @@
                         <div class="img-elenco">
                             <div class="fila-superior">
                                 <div class="personaje-container">
-                                    <a href="https://es.wikipedia.org/wiki/David_Shore">
-                                    <img id="david-img" title="David Shore" src="./elenco/david_shore.jpg">
-                                </a>
+                                    <a href="https://es.wikipedia.org/wiki/David_Shore" target="_blank">
+                                        <img id="david-img" title="David Shore" src="./elenco/david_shore.jpg">
+                                    </a>
                                     <p class="nombre-personaje" id="david_shore">David Shore</p>
                                 </div>
                             </div>
@@ -135,7 +149,7 @@
                     </li>
                 </ul>
 
-                <img title="House bastón" src="./img/housebaston.webp">
+                <img class="housebaston" title="House bastón" src="./img/housebaston.webp">
             </article>
 
                 <article>
@@ -169,11 +183,12 @@
             </section>
         </main>
             <footer>
-                <ul>
+                <ul class="footer-ul">
                     <li><a class="menu-footer" href="#inicio">Inicio</a></li>
                     <li><a  rel="noopener" class="menu-footer" href="https://es.wikipedia.org/wiki/Dr._House" target="_blank">Informacion de Dr House</a></li>
                     <li><a rel="noopener" class="menu-footer" title="Netflix" href="https://www.netflix.com/ar/title/70136117" target="_blank">Dr. House En Netflix</a></li>
                     <li><a rel="noopener" class="menu-footer" href="https://house.fandom.com/es/wiki/P%C3%A1gina_principal" target="_blank">Fandom</a></li>
+                    <li><a class="menu-footer" href="contacto.html">Contacto</a></li>
                 </ul> 
             </footer>
 </body>
