@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="elenco-curiosidades.css">
     <link rel="stylesheet" href="trailer.css">
+    <link rel="stylesheet" href="media-trailer.css">
     <link rel="shortcut icon" href="img/house-logo.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Exo&family=Roboto&display=swap" rel="stylesheet">
     <title>Trailer 💊</title>
@@ -13,6 +13,19 @@
 <body>
     <header>
         <nav>
+            <input class="menu-input" type="checkbox" id="check">
+            <label for="check" class="menu-label">
+                <img class="menu-icon" src="./img/menu.png" alt="menu-ico">
+            </label>
+            <ul class="menu-opciones">
+                <li class="menu-opciones-li">
+                    <a href="elenco-curiosidades.html" class="opciones">Elenco y curiosidades</a>
+                    <a class="opciones" rel="noopener" href="https://es.wikipedia.org/wiki/Dr._House" target="_blank">Información de Dr House</a>
+                    <a class="opciones" rel="noopener" title="Netflix" href="https://www.netflix.com/ar/title/70136117" target="_blank">Dr. House En Netflix</a>
+                    <a class="opciones" rel="noopener" href="https://house.fandom.com/es/wiki/P%C3%A1gina_principal" target="_blank">Fandom</a>
+                    <a class="opciones" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
             <ul id="menu">
                 <li><a id="menu-link-titulo" href="index.html"><h1>Dr House M.D</h1></a></li>
                 <li><a class="menu-link" href="elenco-curiosidades.html">Elenco y curiosidades</a></li>
@@ -20,8 +33,7 @@
         </nav>
     </header>
     <main>
-        <h2 class="titulo-trailer">Trailer</h2>
-        <iframe src="https://www.youtube.com/embed/6p7yNFN0bTA?si=9xtvthX4mRTvTErT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="trailer" src="https://www.youtube.com/embed/6p7yNFN0bTA?si=9xtvthX4mRTvTErT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </main>
     <footer>
         <ul>
