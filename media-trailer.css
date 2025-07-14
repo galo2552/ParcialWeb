@@ -1,6 +1,11 @@
 #check {
     display: none;
 }
+
+.boton {
+    display: none;
+}
+
 @media screen and (max-width: 1440px) {
     .trailer {
         height: 550px;
@@ -47,13 +52,25 @@
 
 @media screen and (max-width: 1024px) {
     .trailer {
-        height: 550px;
-        z-index: -1;
-        top: 190px;
+        display: none;
     }
 
     footer {
-        display: none;
+        display: block;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .boton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 200px;
+        padding: 20px;
+        font-size: 40px;
+        border-radius: 20px;
+        color: #ECF0F1;
+        background-color: #cc0000;
     }
 
         nav {
@@ -165,6 +182,10 @@
 @media screen and (max-width: 425px) {
     .trailer {
         height: 400px;
+    }
+
+    footer {
+        display: none;
     }
 
     #menu li:first-child h1 {
